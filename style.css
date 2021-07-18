@@ -1,0 +1,136 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: url(imgs/1366_2000.jpg);
+    background-repeat: no-repeat;
+    font-family: 'Roboto',sans-serif;
+}
+.container{
+    width: 50%;
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 40px;
+    color: #fff;
+    position: relative;
+    background-color: rgba(38, 53,90, 0.45);
+    backdrop-filter: blur(30px);
+    box-shadow: 0 8px 32px 0 rgba(31,38,135,0.37);
+    min-width: 600px;
+}
+.options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.options span{
+    font-weight: 600;
+    font-size: 14px;
+    color: #cadbff;
+}
+.options button{
+    border: none;
+    outline: none;
+    padding: 5px 10px ;
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.096);
+    font-size: 12px;
+    cursor: pointer;
+    color: #cadbff;
+}
+.options button i{
+    margin-left: 5px;
+}
+.icons-container{
+    display: grid;
+    grid-template-columns: repeat(6,auto);
+    grid-template-rows: repeat(3,70px);
+    gap: 10px 0;
+    padding: 10px 0;
+    font-size: 13px;
+    color:#cadbff;
+}
+.icons-container .icono-cont{
+    text-align: center;
+    cursor: pointer;
+}
+.icons-container .icono-cont span{
+    margin-top: 2px;
+    display: block;
+}
+.icons-container .icono-cont img,
+.bottom-container .bottom-icons img{
+    height: 35px;
+}
+h3{
+    padding: 20px 0;
+    color:#cadbff;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.bottom-container{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    grid-template-rows: repeat(3,70px);
+    color:#cadbff;
+    margin-bottom: 20px;
+}
+.bottom-container .bottom-icons{
+    display: flex;
+    cursor: pointer;
+}
+.bottom-container .bottom-icons img{
+    margin-right: 10px;
+}
+.bottom-icons div p{
+    font-size: 13px;
+    font-weight: 500;
+}
+.bottom-icons div span{
+    font-size: 12px;
+    font-weight: 200;
+    line-height: 20px;
+}
+.navbar{
+    position: absolute;
+    width: 100%;
+    border-radius: 0px 0 10px 10px;
+    transform: translate(-40px);
+    bottom: 0;
+    padding: 0 40px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #cadbff;
+    border-top: 1px solid rgba(255, 255, 255, 0.18);
+    background: rgba(6, 35, 124, 0.383);
+}
+.navbar .perfil{
+    display: flex;
+    align-items: center;
+}
+.navbar .perfil img{
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.navbar .perfil span{
+    margin-left: 5px;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+}
+.navbar .config i{
+    font-size: 22px;
+    padding: 0 8px;
+    cursor: pointer;
+}
